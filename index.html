@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сравнение алгоритмов</title>
+  </head>
+  <body>
+    <div class="input-container">
+      <label class="count-lable" for="count"
+        >Количество элементов для сортировки:
+      </label>
+      <input class="count-input" id="count" type="text" value="5000" />
+      <br />
+      <label class="count-lable">Диапазон значений: </label>
+      <input class="min-value" type="text" value="0" />
+      <input class="max-value" type="text" value="1000" />
+      <br />
+      <input class="count-button" type="button" value="Показать результаты" />
+    </div>
+
+    <p class="load-generate" style="display: none">Генерация массива...</p>
+    <p class="load-results" style="display: none">Сортировка...</p>
+
+    <div class="result-container" style="display: none">
+      <p class="result-title">Время завершения алгоритмов сортировки:</p>
+      <p class="result-answer">
+        Пузырьковая сортировка: <span class="bubble-sort"></span> Сортировка
+        выбором: <span class="selection-sort"></span> Сортировка вставками:
+        <span class="insertion-sort"></span>
+      </p>
+      <p class="info-title">
+        Массив значений и результаты сортировки отображены в консоли браузера
+        (клавиша F12)
+      </p>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
